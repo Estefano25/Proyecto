@@ -1,0 +1,11 @@
+{% extends 'store/main.html' %}
+
+{% block content %}
+<div class="container">
+  <h2>Logout</h2>
+  <form method="post">
+    {% csrf_token %}
+    <button class="btn btn-primary" type="submit">Logout</button>
+  </form>
+</div>
+{% endblock %}
